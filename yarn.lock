@@ -1058,10 +1058,20 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+"@expo-google-fonts/dev@^0.2.0":
+  "integrity" "sha512-Y6fnRxfq6eHwB3/a7hn7idLP9taAyNwcBvZBXTP+akUKDSc8mmFNk0axIgNsdvjMPmBf34K8WfWQsQn2Ds/Fqg=="
+  "resolved" "https://registry.npmjs.org/@expo-google-fonts/dev/-/dev-0.2.0.tgz"
+  "version" "0.2.0"
+
+"@expo-google-fonts/prompt@^0.2.0":
+  "integrity" "sha512-nwSfjwskuVND4zSvJY8rAHbJOChOFmIOcmxPg9YWfTJM8SKEt29WUxIled2nExB+oCh4UDIMVlwplWJrx5L+Jg=="
+  "resolved" "https://registry.npmjs.org/@expo-google-fonts/prompt/-/prompt-0.2.0.tgz"
+  "version" "0.2.0"
+
 "@expo/config-plugins@^4.0.2":
-  "integrity" "sha512-yFcqqllAKz472UUdMRtcmfz8cHBT5VJ044cDY2E5JvaO/DQ9lfe4j/0soVUv7aeiHIWOheywJeefNfqpCo0glQ=="
-  "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-4.0.13.tgz"
-  "version" "4.0.13"
+  "integrity" "sha512-QqxVEt2bFu3ZuI1soULRJv7i0Zrg/FMZ0IxNV7Y3AjH7fhtUJH3pPo9f6MURvqNr+PLxhBlkofkWfunrVejSkw=="
+  "resolved" "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-4.0.15.tgz"
+  "version" "4.0.15"
   dependencies:
     "@expo/config-types" "^43.0.1"
     "@expo/json-file" "8.2.34"
@@ -1516,6 +1526,11 @@
   "version" "15.0.14"
   dependencies:
     "@types/yargs-parser" "*"
+
+"@use-expo/font@^2.0.0":
+  "integrity" "sha512-oOJ2uaRyZNQg7PnQviz7nBcdrRL38zxScab4ktgtI4asa6G0dHW9wg307uJJmn0sHS04Yqtw+m0EOjDcGw3iWg=="
+  "resolved" "https://registry.npmjs.org/@use-expo/font/-/font-2.0.0.tgz"
+  "version" "2.0.0"
 
 "@xmldom/xmldom@~0.7.0":
   "integrity" "sha512-V3BIhmY36fXZ1OtVcI9W+FxQqxVLsPKcNjWigIaa81dLC9IolJl5Mt4Cvhmr0flUnjSpTdrbMTSbXqYqV5dT6A=="
@@ -2854,12 +2869,11 @@
     "expo-modules-core" "~0.4.4"
     "uuid" "^3.4.0"
 
-"expo-font@~10.0.3":
-  "integrity" "sha512-xM5oqIduGvJ+qbsZHjMNNt+3hhjOMTunHUtOx5rAmW/D1ZVdfLwjDwOyWBVkH8ChoBRAZy9gsC2cRs7naw8NIw=="
-  "resolved" "https://registry.npmjs.org/expo-font/-/expo-font-10.0.3.tgz"
-  "version" "10.0.3"
+"expo-font@^10.0.4", "expo-font@>=8.1.0", "expo-font@~10.0.3":
+  "integrity" "sha512-ieEsT6tD6yD6qT7WUzzJ5el0UvACr53RqICu0GI9GUiWuwDFPM2Oi5WfWwYFFStCRuaP6kEtpkJDUZ9cjT5F+w=="
+  "resolved" "https://registry.npmjs.org/expo-font/-/expo-font-10.0.4.tgz"
+  "version" "10.0.4"
   dependencies:
-    "expo-modules-core" "~0.4.4"
     "fontfaceobserver" "^2.1.0"
 
 "expo-keep-awake@~10.0.0":
@@ -2891,7 +2905,7 @@
   "resolved" "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-1.1.0.tgz"
   "version" "1.1.0"
 
-"expo@~43.0.2":
+"expo@*", "expo@~43.0.2":
   "integrity" "sha512-kIyBhLO+nkYLTxTvZOBxoadClXPd6GqAOEg9c8rHdfya2TSElbrxF9QDeE6xp/AoHT8IhhYttCMXC/z5D8JMKQ=="
   "resolved" "https://registry.npmjs.org/expo/-/expo-43.0.4.tgz"
   "version" "43.0.4"
@@ -4847,6 +4861,11 @@
   "resolved" "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   "version" "0.1.1"
 
+"prelude-ls@^1.2.1":
+  "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
+  "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
+  "version" "1.2.1"
+
 "pretty-format@^26.4.0", "pretty-format@^26.5.2", "pretty-format@^26.6.2":
   "integrity" "sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg=="
   "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-26.6.2.tgz"
@@ -4971,6 +4990,13 @@
     "flow-parser" "^0.121.0"
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
+
+"react-native-custom-fonts@^1.2.0-beta.1":
+  "integrity" "sha512-+33DNRcfrJEd/vZLqlHys3sp7SnqnLgTdTJJ3U1Mx3FHrJINEznPhGixPuQUqPsJrgpb/ydiZvOvJNudxuj3Iw=="
+  "resolved" "https://registry.npmjs.org/react-native-custom-fonts/-/react-native-custom-fonts-1.2.0-beta.1.tgz"
+  "version" "1.2.0-beta.1"
+  dependencies:
+    "type-check" "^0.4.0"
 
 "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-vF4yEUrV5GMBioTkvf5Le1l3N/52dSLBnNMFC+kZ4hssnRoXB0hEQ0ReUkZckRB5L3nbHBhAyjySEtFPx4nyEA=="
@@ -5865,6 +5891,13 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   "version" "2.3.1"
 
+"type-check@^0.4.0":
+  "integrity" "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="
+  "resolved" "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz"
+  "version" "0.4.0"
+  dependencies:
+    "prelude-ls" "^1.2.1"
+
 "type-fest@^0.7.1":
   "integrity" "sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg=="
   "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.7.1.tgz"
@@ -6186,6 +6219,11 @@
     "which-module" "^2.0.0"
     "y18n" "^4.0.0"
     "yargs-parser" "^18.1.2"
+
+"yarn@^1.22.17":
+  "integrity" "sha512-H0p241BXaH0UN9IeH//RT82tl5PfNraVpSpEoW+ET7lmopNC61eZ+A+IDvU8FM6Go5vx162SncDL8J1ZjRBriQ=="
+  "resolved" "https://registry.npmjs.org/yarn/-/yarn-1.22.17.tgz"
+  "version" "1.22.17"
 
 "yocto-queue@^0.1.0":
   "integrity" "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="

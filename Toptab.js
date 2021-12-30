@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import CircleComponent from './CircleComponent'
 import HomePage from './HomePage';
 import { NavigationContainer } from '@react-navigation/native';
-import Flat1 from './Flat1';
+import Flat1 from './Reuse comp/TransactionRecord';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -14,7 +13,7 @@ export default function Toptab () {
         <View style={{ flex: 1, flexDirection: 'row'}}>
 
       
-        <NavigationContainer>
+        <NavigationContainer independent={true}>
                 <Tab.Navigator screenOptions={{
                       tabBarLabelStyle: { fontSize: 12 },
     tabBarStyle: { backgroundColor: 'white', borderWidth: 1, borderColor: "#D3D3D3",

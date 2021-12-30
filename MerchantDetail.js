@@ -44,7 +44,7 @@ export default function (){
 
     return (
       <View style={{ height: "100%"}}>
-      <View style={{backgroundColor: "#FFC933", height: "45%", paddingTop:32}}>
+      <View style={{backgroundColor: "#FFC933", height: "60%", paddingTop:32}}>
 
      
       <View style={{marginLeft: 22, flexDirection: 'row', justifyContent: 'space-between'}}>

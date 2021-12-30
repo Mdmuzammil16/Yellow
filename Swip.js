@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, YellowBox } from 'react-native';
 import Swiper from 'react-native-web-swiper';
-import CircleComponent from './CircleComponent';
-import Circle from './CircleComponent';
+import CircleComponent from './Reuse comp/CircleComponent';
+import Circle from './Reuse comp/CircleComponent';
 import HomePage from './HomePage';
 
 const styles = StyleSheet.create({

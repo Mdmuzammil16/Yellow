@@ -1,20 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, {Component,useEffect, useState} from 'react';
+import { AppLoading } from 'expo'
+import CustomFontsProvider, {useCustomFont} from "react-native-custom-fonts";
 import { FlatList, SafeAreaView, StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import { Ionicons, AntDesign, EvilIcons, Entypo, Feather , MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
-import { colord } from "colord";
 import HomePage from './HomePage';
 import Swip from './Swip';
-import CircleComponent from './CircleComponent';
+import CircleComponent from './Reuse comp/CircleComponent';
 import MerchantDetail from './MerchantDetail';
 import MerchantCustom from './MerchantCustom';
 import Toptab from './Toptab';
 import Food from './Food'
 import Profile from './Profile';
 import Account from './Account';
-import Flat1 from './Flat1';
+import Flat1 from './Reuse comp/TransactionRecord';
 import CustomBottombar from './CustomBottombar'
 import Test from './Test';
+import {
+  useFonts,
+  Prompt_400Regular,
+  
+  
+} from "@expo-google-fonts/prompt";
 
 
 let gray = "#91A1BD"
@@ -39,27 +46,11 @@ const DATA = [
 ];
 
 export default function App() {
-  const Morph =({children})=>{
-    return(
-      <View style={{flex: 1,marginTop: 15,  justifyContent: 'center'}}>
 
-    
-      <View style={styles.morphTop}>
-      <View style={styles.morphBottom}>
-      {children}
-      </View>
-      </View>
-      </View>
 
-     
-    )
-    
-    
-  }
   return (
-  
-   <Profile/>
-   
+    <CustomBottombar/>
+
     
   );
 }

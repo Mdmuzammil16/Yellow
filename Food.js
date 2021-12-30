@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View ,FlatList, TouchableOpacity, Image } from 'react-native';
 import {  SimpleLineIcons, Ionicons , MaterialCommunityIcons , Feather,AntDesign,Entypo } from '@expo/vector-icons';
 import DATA2 from './DATA2';
+import { ScrollView } from 'react-native-web';
 export default function Food() {
     
         return (
@@ -15,8 +16,8 @@ export default function Food() {
                <Ionicons name="ios-heart-outline" size={24} color="black" />
 
            </View>
-
       <View style={{alignItems:'center'}}>
+        
          <FlatList
          style={{paddingVertical: 10, paddingHorizontal: 20}}
             data={DATA2}

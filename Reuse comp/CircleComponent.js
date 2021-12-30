@@ -9,12 +9,12 @@ const BACKGROUND = "#FFFFFF"
 export default function CircleComponent(){
         
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, alignItems:'center', justifyContent: 'center'}}>
         <View style={styles.bigcircle}>
       <View style={styles.CircleShape} >
-           <Text style={{fontSize: 24, color: 'grey', fontWeight: 'bold'}}>Expenses</Text>
-           <Text style={{fontSize: 32, color: "#000", fontWeight: 'bold'}}>₹10,400</Text>
-           <Text  style={{fontSize: 12, color: 'grey', fontWeight: 'bold'}}>This month</Text>
+           <Text style={{fontSize: 24,fontFamily: 'Prompt-Regular', color: 'grey', fontWeight: 'bold'}}>Expenses</Text>
+           <Text style={{fontSize: 32,fontFamily: 'Prompt-Regular', color: "#000", fontWeight: 'bold'}}>₹10,400</Text>
+           <Text  style={{fontSize: 12,fontFamily: 'Prompt-Regular', color: 'grey', fontWeight: 'bold'}}>This month</Text>
       </View>
       </View>
       </View>

@@ -5,6 +5,7 @@ import { Ionicons, AntDesign, EvilIcons, Entypo, Feather , MaterialCommunityIcon
 import { colord } from "colord";
 import Swiper from 'react-native-web-swiper';
 import Swip from './Swip'
+import Flat1 from './Reuse comp/TransactionRecord';
 
 let gray = "#91A1BD"
 
@@ -71,7 +72,7 @@ export default function HomePage() {
      <Feather name="heart" size={24} color="black" />
    </View>
 
-    <View style={{flex: 1.3}}>
+    <View style={{flex: 1.8}}>
     <Swip/>
     </View>
    
@@ -99,7 +100,7 @@ export default function HomePage() {
 </View>
 
 
-<Text style={{color: 'gray',marginTop: 2,
+<Text style={{color: 'gray',marginTop: 2,fontFamily: 'Prompt-Regular',
 }}>Payment</Text>
 
 </View>
@@ -110,7 +111,7 @@ export default function HomePage() {
 style={{height: 20, width: 20}}
 source={require('./assets/Vector.png')}/>
 </View>
-<Text style={{color: 'gray', marginTop: 2}}>Category</Text>
+<Text style={{color: 'gray', marginTop: 2, fontFamily: 'Prompt-Regular',}}>Category</Text>
 
 </View>
 
@@ -126,49 +127,7 @@ source={require('./assets/Vector.png')}/>
      <Text style={{color: 'grey'}}>See All {'>'}</Text>
    </View>
   
-    <FlatList
-    style={{flex: 1}}
-      data={DATA}
-      renderItem={({item})=>
-      <View style={{flex: 1 }}>
-
-      
-      <View style={{flex: 1, flexDirection: 'row',
-      shadowColor: 'grey',
-       alignItems: 'center',
-       paddingHorizontal: 10, marginBottom: 2,
-       
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 5,
-    shadowRadius: 4,
-    elevation: 12,
-       backgroundColor: 'white',
-       borderRadius: 14,
-      marginTop: 13,
-      paddingVertical: 6,
-      marginHorizontal: 15,
-      paddingHorizontal: 10,
-       justifyContent: 'space-between'}}>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Image
-            resizeMode={'contain'}
-              style={{height: 50, width: 50, borderRadius: 18}}
-              source={{uri: item.mainimg}}
-            />
-            <Text style={{marginLeft: 12, color: 'gray',
-             fontSize: 16, fontWeight: 'bold'}}>{item.title}</Text>
-          </View>
-
-          <View >
-              <Text style={{color: "#FF4500",
-               fontWeight: 'bold', fontSize: 18}}>-$1200</Text>
-              <Text style={{color: 'grey', marginTop: 4}}>09:00 AM</Text>
-          </View>
-      </View>
-      </View>
-      }
-
-    />
+   <Flat1/>
 
  </View>
   

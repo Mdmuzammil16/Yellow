@@ -35,7 +35,7 @@ const DATA = [
     },
   ];
 
-export default function Flat1(){
+export default function TransactionRecord(){
     return (
         <FlatList
         style={{flex: 1, backgroundColor: "#FFF"}}
@@ -67,13 +67,13 @@ export default function Flat1(){
                   source={{uri: item.mainimg}}
                 />
                 <Text style={{marginLeft: 12, color: 'gray',
-                 fontSize: 16, fontWeight: 'bold'}}>{item.title}</Text>
+                 fontSize: 16, fontWeight: 'bold', fontFamily: 'Prompt-Regular',}}>{item.title}</Text>
               </View>
     
               <View >
                   <Text style={{color: "#FF4500",
-                   fontWeight: 'bold', fontSize: 18}}>-$1200</Text>
-                  <Text style={{color: 'grey', marginTop: 4}}>09:00 AM</Text>
+                   fontWeight: 'bold', fontSize: 18, fontFamily: 'Prompt-Regular',}}>-$1200</Text>
+                  <Text style={{color: 'grey', marginTop: 4, fontFamily: 'Prompt-Regular',}}>09:00 AM</Text>
               </View>
           </View>
           </View>
